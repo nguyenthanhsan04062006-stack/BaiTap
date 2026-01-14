@@ -1,0 +1,23 @@
+import java.util.Scanner;
+import java.util.Random;
+
+public class Bai5random {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        Random rd = new Random();
+
+        int soNgauNhien = rd.nextInt(10) + 1;
+        int dem = 0;
+        int nhap;
+
+        do {
+            System.out.print("Nhap so (1-10): ");
+            nhap = sc.nextInt();
+            dem++;
+        } while (nhap != soNgauNhien);
+
+        System.out.println("Chinh xac!");
+        System.out.println("So ngau nhien la: " + soNgauNhien);
+        System.out.println("So lan nhap: " + dem);
+    }
+}
