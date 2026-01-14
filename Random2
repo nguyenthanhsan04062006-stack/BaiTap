@@ -1,0 +1,8 @@
+import java.util.Random;
+
+public class Bai2random {
+    public static void main(String[] args) {
+        Random rd = new Random();
+        double so = 1.8 + (8.0 - 1.8) * rd.nextDouble();
+        System.out.println("So thuc ngau nhien: " + so);
+    }
