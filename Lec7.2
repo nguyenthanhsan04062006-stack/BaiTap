@@ -1,0 +1,21 @@
+package Assigment7;
+
+import java.util.Scanner;
+
+public class Text6 {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter characters in a string: ");
+        String s = sc.nextLine();
+
+        System.out.print("\n Enter word to be replaced: ");
+        String oldWord = sc.nextLine();
+
+        System.out.print("\n Enter replacement word: ");
+        String newWord = sc.nextLine();
+
+        String result = s.replace(oldWord, newWord);
+        System.out.print("\n New string: " + result);
+    }
+}
