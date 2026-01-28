@@ -1,0 +1,15 @@
+package Assigment7;
+
+import java.util.Scanner;
+
+public class Text4 {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter characters in a string: ");
+        String s = sc.nextLine().trim();
+        String[] words = s.split("\\s+");
+        String result = String.join(" ", words);
+        System.out.println("String after remove excessive spaces: " + result);
+    }
+}
